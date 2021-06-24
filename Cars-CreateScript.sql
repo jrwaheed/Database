@@ -1,4 +1,4 @@
-CREATE table cars (
+CREATE table Cars, trucks (
 	id int auto_increment primary key,
 	brand varchar(200),
 	model varchar(200),
