@@ -26,3 +26,13 @@ select ArticleName, BuyingPrice from warehouse where BuyingPrice > 50 ORDER by B
 select ArticleName, SellingPrice from warehouse where Id = 3 or Id =2;
 
 select avg(BuyingPrice) from warehouse w ;
+
+update warehouse 
+set Amount = 2
+where id = 7;
+
+select sum(BuyingPrice*Amount) from warehouse where RackNumber= 5;
+select sum(SellingPrice * Amount) from warehouse where RackNumber = 5;
+
+#PROFIT CALCULATION
+select sum((SellingPrice - BuyingPrice) * Amount) from warehouse where RackNumber = 5;
