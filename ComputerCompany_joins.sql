@@ -1,0 +1,1 @@
+SELECT * FROM CustomerReview inner join Games on Games.games_id = CustomerReview.games_id;
